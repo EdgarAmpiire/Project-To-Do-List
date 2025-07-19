@@ -1,0 +1,10 @@
+--- !ruby/object:TodoList
+tasks:
+- !ruby/object:Task
+  description: wash car
+  completed: true
+  created_at: 2025-07-19 14:56:15.344567000 +03:00
+- !ruby/object:Task
+  description: was clothes
+  completed: false
+  created_at: 2025-07-19 14:56:22.643064000 +03:00

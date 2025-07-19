@@ -31,7 +31,7 @@ class TodoList
     File.open(filename, 'w') { |file| file.write(YAML.dump(self)) }
   end
 
-  def load(filename = 'todo.yml')
-    File.exist?(filename) ? YAML.load_file(filename, permitted_classes[Task, TodoList]) : TodoList.new
+  def self.load(filename = 'todo.yml')
+    File.exist?(filename) ? YAML.load_file(filename, permitted_classes: [Task, TodoList, Time ]) : TodoList.new
   end
 end
