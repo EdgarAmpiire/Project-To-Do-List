@@ -7,7 +7,7 @@ class Task
     @created_at = Time.now
   end
 
-  def mark_down
+  def done
     @completed = true
   end
 end
